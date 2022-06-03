@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# This software is in the public domain.
+
+# converts bf code into nfck code
+sed -e 's/>/\)/g;s/</\(/g;s/\+/*/g;s/\-/\//g;s/\./\!/g;s/\,/\?/g;s/\[/\{/g;s/\]/\}/g' $1 >> $2
